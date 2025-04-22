@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+</head>
+<body style="display: flex; justify-content: center; color: white; background-color: black; font-size: x-large;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <h3>Number Guessing Game</h3>
+        <p>Try and guess a random number between 1 to 100.</p>
+        <p>You have 10 attempts to guess the number.</p>
+        <form class="form" style="display: flex; flex-direction: column;">
+            <label style="font-size: xx-large;" for="guessField" id="guess">Guess a number</label>
+            <input type="text" class="guessField" id="guessField">
+            <br>
+            <input style="background-color: grey; font-size: medium;" type="submit" id="subt" class="guessSubmit" value="Submit Guess">
+        </form>
+        <div class="resultParas" style="display: flex; flex-direction: column; align-items: center;">
+            <p>Previous Guess : <span class="guesses"></span></p>
+            <p>Guesses Remaining : <span class="lastResult"></span></p>
+            <p class="lowOrHigh"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
